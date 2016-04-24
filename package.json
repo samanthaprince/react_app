@@ -4,7 +4,7 @@
   "description": "simple react app",
   "main": "index.js",
   "scripts": {
-    "test": "babel-tape-runner test/**/*-test.js"
+    "test": "tape -r ./test/babel-register-setup test/*-test.js | faucet"
   },
   "repository": {
     "type": "git",
