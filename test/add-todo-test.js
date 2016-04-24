@@ -17,7 +17,7 @@ test('Add Todo component', (t) => {
 
     const form = mount(<AddTodo onNewTodo={todoCallback} />);
 
-    const input = form.fin  d('input').get(0);
+    const input = form.find('input').get(0);
     input.value = 'Buy kibble';
 
     form.find('button').simulate('click');
